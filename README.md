@@ -1,4 +1,4 @@
-# ¿Que es Proxmox VE?
+# <b>¿Que es Proxmox VE?</b>
 
 Proxmox Virtual Environment o mejor conocido como [Proxmox VE][1_0] o PVE, es un servidor de [código abierto][1_1] que nos permite virtualizar y gestionar otros sistemas operativos, este servidor fue desarrollado por medio de una distribución de [GNU/Linux][1_2] basada en [Debian][1_3], la cual usa también un kernel modificado de [Ubuntu][1_4] LTS para así poder ejecutar varias [máquinas virtuales][1_5] y [contenedores][1_6] en un solo servidor, Proxmox VE también incluye una consola web y  herramientas de líneas de comandos qué garantizan una accesibilidad simple y rápida.
 
@@ -16,10 +16,10 @@ Proxmox Virtual Environment o mejor conocido como [Proxmox VE][1_0] o PVE, es un
 
 [1_6]:https://es.wikipedia.org/wiki/Virtualizaci%C3%B3n_a_nivel_de_sistema_operativo
 
-# Requisitos del sistema
+# <b>Requisitos del sistema</b>
 Para servidores de producción, se necesita equipo de servidor de alta calidad. Proxmox VE admite la agrupación en clústeres, lo que significa que varias instalaciones de Proxmox VE se pueden administrar de forma centralizada gracias a la funcionalidad de clúster integrada. Proxmox VE puede usar almacenamiento local como (DAS), SAN, NAS, así como almacenamiento compartido y distribuido (Ceph).
 
-## Hardware recomendado
+## <b>Hardware recomendado</b>
 
 * Intel EMT64 o AMD64 con indicador de CPU Intel VT/AMD-V.
 
@@ -35,7 +35,7 @@ Para servidores de producción, se necesita equipo de servidor de alta calidad. 
 
 * Para el paso a través de PCI(e), se necesita una CPU con indicador de CPU VT-d/AMD-d.
 
-## Hardware mínimo (solo para pruebas)
+## <b>Hardware mínimo (solo para pruebas)</b>
 
 * CPU: 64 bits (Intel EMT64 o AMD64).
 
@@ -47,7 +47,7 @@ Para servidores de producción, se necesita equipo de servidor de alta calidad. 
 
 * ellos NADA.
 
-## Navegadores webs compatibles para acceder a la interfaz web
+## <b>Navegadores webs compatibles para acceder a la interfaz web</b>
 
 Para usar la interfaz web, necesita un navegador moderno, esto incluye:
 
@@ -59,7 +59,7 @@ Para usar la interfaz web, necesita un navegador moderno, esto incluye:
 
 * Safari, un lanzamiento del año en curso.
 
-# 1. Descarga de la imagen ISO
+# <b>1. Descarga de la imagen ISO</b>
 
 Para dar inicio a este tutorial, primero tendremos que descargar el servidor [Proxmox VE][2_0] desde su página oficial.
 
@@ -93,7 +93,7 @@ Luego de que se haya descargado por completo nuestro instalador que pesa aproxim
 
 ![img_08](img/img_08.png)
 
-# 2. Máquina virtual
+# <b>2. Máquina virtual</b>
 
 Para este caso vamos a crear nuestra máquina virtual por medio de un programa conocido como [Virtual Box][3_0], el cual es un [Hipervisor][3_1] que nos permitirá correr nuestro sistema Proxmox VE dentro de nuestra computadora por medio de una proceso conocido como virtualización.
 
@@ -101,13 +101,13 @@ Para este caso vamos a crear nuestra máquina virtual por medio de un programa c
 
 [3_1]:https://es.wikipedia.org/wiki/Hipervisorhttps://www.virtualbox.org/wiki/Downloads
 
-## 2.1. Crear una nueva máquina virtual
+## <b>2.1. Crear una nueva máquina virtual</b>
 
 Lo primero que vamos a hacer es abrir Virtual Box y le daremos click izquierdo en <b>nueva</b> para crear una máquina virtual.
 
 ![img_09](img/img_09.png)
 
-## 2.2. Nombre y sistema operativo
+## <b>2.2. Nombre y sistema operativo</b>
 
 Una vez que le dimos en crear se nos desplegara una ventana en la que tendremos unas opción de <b>Nombre</b> en la que le podremos dar un nombre a nuestra máquina virtual, una opción de <b>Carpeta maquina</b> en la que podremos seleccionar la carpeta en la que vamos a crear nuestra máquina virtual, una opción de <b>Tipo</b> en la que podremos definir el tipo de sistema que vamos a instalar y una última opción llamada <b>Versión</b> en la cual podremos definir la versión que tendrá nuestro sistema. 
 
@@ -125,7 +125,7 @@ Luego de esto procederé a dar un click izquierdo en <b>Next</b>.
 
 ![img_10](img/img_10.png)
 
-## 2.3. Tamaño de memoria
+## <b>2.3. Tamaño de memoria</b>
 
 Una vez que le dimos click en Next, nos saldrá una ventana en la que le podemos asignar la cantidad de memoria RAM que va a tener nuestra máquina virtual, teniendo en cuanta la cantidad de memoria RAM que tiene nuestro ordenador. En mi caso mi ordenador tiene <b>4GB (4069MB)</b> de memoria RAM y procederé a asignar <b>1500MB</b> de memoria que equivalen a aproximadamente <b>1.5GB</b> de memoria y una vez hecho esto procederé a dar un click izquierdo en <b>Next</b>.
 
@@ -133,7 +133,7 @@ Una vez que le dimos click en Next, nos saldrá una ventana en la que le podemos
 
 ![img_11](img/img_11.png)
 
-## 2.4. Disco Duro
+## <b>2.4. Disco Duro</b>
 
 En esta ventana podremos seleccionar una de las 3 opciones que hay para añadir un [disco duro virtual][4_0], las cuales son:
 
@@ -150,7 +150,7 @@ En nuestro caso seleccionaremos la opción de <b>Crear un disco duro virtual aho
 
 ![img_12](img/img_12.png)
 
-## 2.5. Tipo de archivo de disco duro
+## <b>2.5. Tipo de archivo de disco duro</b>
 
 En esta ventana nos saldrán 3 opción en las que podremos seleccionar el [tipo de archivo][5_0] que queremos usar en nuestro disco duro virtual, dichas opciones son:
 
@@ -166,7 +166,7 @@ En nuestro caso, seleccionaremos la primera opción y le daremos click izquierdo
 
 ![img_13](img/img_13.png)
 
-## 2.6 Almacenamiento en unidad de disco duro física
+## <b>2.6. Almacenamiento en unidad de disco duro física</b>
 
 En esta ventana nos saldrán las opciones para seleccionar si queremos que nuestro disco duro este <b>reservado dinámicamente </b> es decir que solo se usara espacio en el disco físico a medida que se llena (hasta un máximo tamaño fijo), sin embargo, no se reducirá de nuevo automáticamente cuando el espacio en él se libere, también tendremos la opción de <b>Tamaño fijo</b> que puede tomar más tiempo para su creación en algunos sistemas, pero normalmente es más rápido al usarlo.
 
@@ -174,7 +174,7 @@ En nuestro caso utilizaremos la primera opción puesto que queremos una cantidad
 
 ![img_14](img/img_14.png)
 
-## 2.7 Ubicación del archivo y tamaño
+## <b>2.7. Ubicación del archivo y tamaño</b>
 
 En este paso ya prácticamente tendremos configurada la parte de almacenamiento de nuestro disco, ahora solamente faltara asignarle la cantidad de almacenamiento que queremos que tenga nuestro disco duro y posterior a ello le asignaremos la ubicación donde este se creara.
 
@@ -186,11 +186,11 @@ De esta manera ya tendríamos creada nuestra máquina virtual.
 
 ![img_16](img/img_16.png)
 
-# 3. Configuraciones
+# <b>3. Configuraciones</b>
 
 Una vez creada nuestra máquina virtual, accedemos a las configuraciones de la misma para poder cargar la imagen ISO que descargamos inicialmente; a continuación, mostraremos el paso a paso de la carga de la imagen ISO.
 
-## 3.1. Almacenamiento
+## <b>3.1. Almacenamiento</b>
 
 Una vez creada nuestra máquina virtual nos vamos a ubicar en el apartado de almacenamiento y le vamos a dar click izquierdo sobre este.
 
@@ -224,7 +224,7 @@ y así de esta manera ya tendríamos cargada nuestra imagen ISO.
 
 ![img_23](img/img_23.png)
 
-## 3.2. Pantalla
+## <b>3.2. Pantalla</b>
 
 La siguiente configuración que vamos a realizar va a ser la de seleccionar la opción de <b>Habilitar aceleración 3D</b>, la cual podremos encontrar al dar un clic izquierdo en el apartado de <b>Pantalla</b> y acto seguido nos ubicaremos en <b>Aceleración</b> y luego procederemos a habilitar la opción de <b>aceleración 3D</b>.
 
@@ -238,7 +238,7 @@ y así de esta manera tendremos habilitada la opción de aceleración 3D.
 
 ![img_26](img/img_26.png)
 
-## 3.3. Red
+## <b>3.3. Red</b>
 
 Para finalizar con las configuraciones, lo siguiente que tendremos que configurar es la opción de adaptador puente, en la cual podremos seleccionar donde va a estar conectada nuestra máquina virtual, esta opción la podremos encontrar al dar click izquierdo en el apartado de <b>Red</b> y luego de esto nos ubicaremos en la opción de <b>Conectado a</b> para acto seguido seleccionar en nuestro caso la opción de <b>Adaptador sólo – anfitrión</b>.
 
@@ -256,13 +256,13 @@ y así de esta manera tendremos seleccionado nuestro adaptador de red.
 
 ![img_31](img/img_31.png)
 
-# 4. Ejecutar e instalar
+# <b>4. Ejecutar e instalar</b>
 
 Para iniciar nuestra máquina virtual, nos ubicaremos en la opción que dice <b>Iniciar</b> y luego procederemos a dar click izquierdo sobre este para así poder continuar con nuestro proceso de instalación.
 
 ![img_32](img/img_32.png)
 
-## 4.1. Proxmox
+## <b>4.1. Proxmox</b>
 
 Una vez que hemos iniciado nuestra máquina virtual, nos aparecerá una ventana que dirá <b>Welcome to Proxmox Virtual Environment</b> donde en esta tendremos las opciones de:
 
@@ -282,29 +282,44 @@ Luego de que le hemos dado click en la primera opción nos saldrá un mensaje qu
 
 ![img_34](img/img_34.png)
 
-## 4.2. END USER LICENSE AGREEMENT (EULA)
+## <b>4.2. END USER LICENSE AGREEMENT (EULA)</b>
 
 Luego de darle click en ok, nos aparecerá una ventana en la que podremos leer la licencia del sistema para acto seguido darle click izquierdo en <b>I agree</b> para asi aceptar sus términos y condiciones.
 
 ![img_35](img/img_35.png)
 
-## 4.3. Proxmox Virtual Environment (PVE)
+## <b>4.3. Proxmox Virtual Environment (PVE)</b>
 Una vez que le dimos click en i agree, nos aparecerá una ventana en la que podremos seleccionar el disco duro virtual en el que vamos a instalar nuestro sistema operativo, aparte de este, nos aparecerá un botón de <b>Opcións</b> en el cual al darle click izquierdo nos saldrán las opciones para crear de forma manual las particiones que va a tener nuestro disco duro virtual.
 
 ![img_36](img/img_36.png)
 
-## 4.3.1. Harddisk options
-Luego de que le dimos click en opcions, se nos desplegara una ventana en la que tendremos unas opciones a las cuales le podremos asignar una cantidad de memoria, dichas opciones son:
+## <b>4.3.1. Harddisk options</b>
 
-* <b>hdsize</b>.
-* <b>swapsize</b>.
-* <b>maxroot</b>.
-* <b>minfree</b>.
-* <b>maxvz</b>.
+Luego de que le dimos click en opcions, se nos desplegara una ventana en la que tendremos unas opciones a las cuales le podremos asignar una cantidad de memoria, y aparte de esta tendremos una opción para seleccionar alguno de los distintos [tipos de sistemas de archivos][6_0] o [Filesystem][6_1] que posee GNU/Linux, dichas opciones son:
 
-Para nuestro caso, en <b>hdsize</b> lo vamos a dejar en <b>250GB</b>, en <b>swapsize</b> le vamos a asignar <b>4.5GB</b>, en <b>maxroot</b> le vamos a asignar <b>60GB</b>, a <b>minfree</b> le vamos a asignar <b>35.5GB</b> y a <b>maxvz</b> le vamos a asignar <b>150GB</b>, seguido de esto procederemos a dar click izquierdo en <b>Ok</b> para que se guarden los cambios.
+* <b>Filesystem:</b>. Elemento que controla cómo se almacenan y recuperan los datos.
 
-<b>NOTA: </b> Al momento de hacer las asignaciones se debe tener en cuenta que la suma de las cuatro ultimas opciones tiene que dar igual que la memoria asignada en <b>hdsize</b>.
+* <b>hdsize:</b> Utilice únicamente el tamaño especificado (GB) del disco duro (el resto se deja sin particionar).
+
+* <b>swapsize:</b>Tamaño máximo de [SWAP][6_2] (GB).
+
+* <b>maxroot:</b> Tamaño máximo (GB) para el volumen raíz [LVM][6_3].
+
+* <b>minfree:</b> Espacio libre mínimo de LVM (GB, requerido para instantáneas de LVM).
+
+* <b>maxvz:</b> Tamaño máximo (GB) para el volumen de datos LVM.
+
+Para nuestro caso, en <b>Filesystem</b> vamos a seleccionar el sistema de archivo ext4, en <b>hdsize</b> lo vamos a dejar en <b>250GB</b>, en <b>swapsize</b> le vamos a asignar <b>4.5GB</b>, en <b>maxroot</b> le vamos a asignar <b>60GB</b>, a <b>minfree</b> le vamos a asignar <b>35.5GB</b> y a <b>maxvz</b> le vamos a asignar <b>150GB</b>, seguido de esto procederemos a dar click izquierdo en <b>Ok</b> para que se guarden los cambios.
+
+<b>NOTA:</b> Al momento de hacer las asignaciones se debe tener en cuenta que la suma de las cuatro ultimas opciones tiene que dar igual que la memoria asignada en <b>hdsize</b>.
+
+[6_0]:https://www.softzone.es/linux/tutoriales/sistemas-archivos-diferencias-mejor/
+
+[6_1]:https://es.wikipedia.org/wiki/Sistema_de_archivos
+
+[6_2]:https://es.wikipedia.org/wiki/Espacio_de_intercambio
+
+[6_3]:https://es.wikipedia.org/wiki/Logical_Volume_Manager_%28Linux%29
 
 ![img_37](img/img_37.png)
 
@@ -312,3 +327,32 @@ Acto seguido, una vez que le hemos dado click en ok, procederemos a dar click iz
 
 ![img_38](img/img_38.png)
 
+## <b>4.4. Location and Time Zone selection</b>
+
+Una vez que le dimos click en next, nos aparecerá una ventana en la que tendremos la opción para agregar el país o <b>(Country)</b>, la opción agregar la zona horaria o <b>(Time zone)</b> y por último tendremos la opción para seleccionar el diseño del teclado o <b>(Keyboard Layout)</b>.
+
+En nuestro caso, en la opción de <b>Country</b> escribiremos <b>Colombia</b>, en <b>Time zone</b> escribiremos <b>América/Bogotá</b> y en <b>Keyboard Layout</b> seleccionaremos <b>Spanish</b>, y acto seguido procederemos a dar un click izquierdo en <b>Next</b>.
+
+![img_39](img/img_39.png)
+
+## <b>4.5. Administration Password and Email Address</b>
+
+Una vez que le dimos click en next, nos aparecerá una ventana en la que podremos agregar una contraseña <b>(Password)</b>, otra opción para confirmar <b>(Confirm)</b> nuestra contraseña y una ultima opción en la que podremos agregar nuestro correo <b>(Email)</b>.
+
+En nuestro caso, procederemos a agregar y confirmar la contraseña, y por último agregaremos el correo para acto seguido dar click izquierdo en <b>Next</b>.
+
+![img_40](img/img_40.png)
+
+## <b>4.6. Management Network Configuration</b>
+
+Luego de que hayamos dado click en next, nos saldrá una ventana en la que tendremos la opción para seleccionar la interfaz de gestión <b>(Management Interface)</b>, la opción para agregar el nombre de anfitrión <b>(Hostname)</b>, la opción para agregar la dirección IP <b>(IP Address)</b>, la opción para agregar la puerta <b>(Gateway)</b> y por último tendremos la opción para agregar el servidor DNS <b>(DNS Server)</b>.
+
+En nuestro caso, la <b>Management Interface</b> la dejaremos como viene por defecto, en <b>Hostname</b> pondremos nuestro nombre de usuario que será <b>Cronos96.prueba.test</b>, en <b>IP Address</b> y <b>Gateway</b> las dejaremos como vienen por defecto y en <b>DNS Server</b> pondremos <b>8.8.8.8</b>, para así, una vez que hayamos agregado estas configuraciones, procederemos a dar click izquierdo en <b>Next</b>.
+
+![img_41](img/img_41.png)
+
+## <b>4.7. Summary</b>
+
+Una vez que hemos dado click en next, nos saldrá una ventana en la que podremos ver todas las configuraciones que hemos realizado previamente para así comprobar que esta todo correcto, y así, una vez que lo hemos confirmado, procederemos a dar click izquierdo en <b>Install</b> para así dar inicio al proceso de instalación del sistema operativo proxmox.
+
+![img_42](img/img_42.png)
