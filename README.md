@@ -450,3 +450,12 @@ Luego de haberle dado clic a login, nos saldrá un mensaje que dice <b>No hay un
 Y así finalmente ya habremos accedido a la interfaz web de proxmox ve, y ya por fin habremos dado por finalizado nuestro proceso de creación e instalación de nuestra máquina virtual.
 
 ![img_63](img/img_63.png)
+
+# Realizado Por
+1. [Diego Marcelo Jimenez Melendez][7_0]
+1. [Jhon Fabio España Cortes][7_1]
+1. [Errol Vladimir Garcia Silva][7_2]
+
+[7_0]:https://github.com/jimdgo12
+[7_1]:https://github.com/JhonFabioEC
+[7_2]:https://github.com/Errol-Garcia
