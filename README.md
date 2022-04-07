@@ -2,6 +2,10 @@
 
 Proxmox Virtual Environment o mejor conocido como [Proxmox VE][1_0] o PVE, es un servidor de [código abierto][1_1] que nos permite virtualizar y gestionar otros sistemas operativos, este servidor fue desarrollado por medio de una distribución de [GNU/Linux][1_2] basada en [Debian][1_3], la cual usa también un kernel modificado de [Ubuntu][1_4] LTS para así poder ejecutar varias [máquinas virtuales][1_5] y [contenedores][1_6] en un solo servidor, Proxmox VE también incluye una consola web y  herramientas de líneas de comandos qué garantizan una accesibilidad simple y rápida.
 
+Su proveedor Proxmox Server Solitions GmbH, es una empresa distribuidora de software de código abierto que fue fundada por Martin Maurer y Dietmar Maurer en el año 2005, actualmente es una empresa independiente que se dedica a desarrollar soluciones de servidor potente y eficientes. Las cuales son ampliamente utilizadas en empresas independientemente de su tamaño, sector o industria, así como en ONG y en el sector educativo.
+
+Con sus dos productos principales, Proxmox Virtual Environment (Proxmox VE) y Proxmox Mail Gateway, la empresa ofrece un software flexible, asequible y fácil de usar para empresas que implementan infraestructuras de TI seguras y de código abierto. Además de ofrecer servicios como suscripciones comerciales y capacitaciones. Contando así con una red mundial de socios y una gran comunidad activa que garantizan la continuidad del negocio para sus usuarios.
+
 [1_0]:https://es.wikipedia.org/wiki/Proxmox_Virtual_Environment
 
 [1_1]:https://es.wikipedia.org/wiki/Software_de_c%C3%B3digo_abierto
@@ -15,6 +19,25 @@ Proxmox Virtual Environment o mejor conocido como [Proxmox VE][1_0] o PVE, es un
 [1_5]:https://es.wikipedia.org/wiki/M%C3%A1quina_virtual
 
 [1_6]:https://es.wikipedia.org/wiki/Virtualizaci%C3%B3n_a_nivel_de_sistema_operativo
+
+# <b>Ventajas de Proxmox VE</b>
+
+* Facilita la administración de máquinas y contenedores virtuales a través de la interfaz de administración web.
+
+* Puede escalar dinámicamente los recursos de almacenamiento, satisfaciendo las demandas de su organización, reduciendo la eficiencia y los costos.
+
+* Posee integración con el hipervisor KVM y LXC la cual permite la virtualización de las cargas de trabajo de aplicaciones de Linux y Windows más exigentes.
+
+* Con el uso del complemento Proxmox de Bacula Enterprise, puede acceder a las capacidades de copia de seguridad de recuperación de datos más robustas y rentables del mercado. Además de permitir la recuperación ante desastres (DR) de máquinas virtuales, incluidos los invitados QEMU y LXC.
+
+* Realiza una copia de seguridad en línea basada en la instantánea de cualquier máquina virtual invitada, incluidos QEMU y LXC.
+
+* Permite la copia de seguridad de imagen completa y posee la capacidad para restaurar una imagen de máquina virtual completa.
+
+* Permite la restauración opcional de archivos de máquina virtual QEMU (.vma) en un directorio alternativo.
+
+* Permite la recuperación de archivos y configuraciones de máquinas virtuales LXC (.tar) en directorios alternativos.
+
 
 # <b>Requisitos del sistema</b>
 Para servidores de producción, se necesita equipo de servidor de alta calidad. Proxmox VE admite la agrupación en clústeres, lo que significa que varias instalaciones de Proxmox VE se pueden administrar de forma centralizada gracias a la funcionalidad de clúster integrada. Proxmox VE puede usar almacenamiento local como (DAS), SAN, NAS, así como almacenamiento compartido y distribuido (Ceph).
