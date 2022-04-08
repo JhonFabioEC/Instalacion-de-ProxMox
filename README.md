@@ -38,8 +38,30 @@ Con sus dos productos principales, Proxmox Virtual Environment (Proxmox VE) y Pr
 
 * Permite la recuperación de archivos y configuraciones de máquinas virtuales LXC (.tar) en directorios alternativos.
 
+# <b>Modelo de lanzamiento proxmox 7.1</b>
+
+Esta versión de proxmox se basa en Debian 11.1 "Bullseye" y utiliza el kernel de Linux 5.13 más reciente, QEMU 6.1, LXC 4.0, Ceph 16.2.6 y OpenZFS 2.1. e innumerables mejoras y correcciones de errores que podemos encontrar en el [Roadmap][1_7] de la página oficial.
+
+Además de contar con varias funcionalidades nuevas y muchas mejoras para las tareas de administración en la interfaz web: soporte para Windows 11, incluido TPM, asistente de creación mejorado para VM/contenedor, capacidad para establecer políticas de retención de respaldo por trabajo de respaldo en la GUI y un nuevo programador daemon que admite horarios más flexibles, entre otros aspectos más destacados tales como:
+
+* LXC 4.0, Ceph 16.2.6, QEMU 6.1 y OpenZFS 2.1.
+
+* Asistente de VM con valores predeterminados para Windows 11 (q35, OVMF, TPM).
+
+* Nuevo programador de copias de seguridad para opciones de programación flexibles.
+
+* Retención de copias de seguridad.
+
+* Bandera de protección para copias de seguridad.
+
+* Autenticación de dos factores: WebAuthn, claves de recuperación, múltiples factores para una sola cuenta.
+
+* Nuevas plantillas de contenedores: Fedora, Ubuntu, Alma Linux, Rocky Linux.
+
+[1_7]:https://pve.proxmox.com/wiki/Roadmap#Proxmox_VE_7.1
 
 # <b>Requisitos del sistema</b>
+
 Para servidores de producción, se necesita equipo de servidor de alta calidad. Proxmox VE admite la agrupación en clústeres, lo que significa que varias instalaciones de Proxmox VE se pueden administrar de forma centralizada gracias a la funcionalidad de clúster integrada. Proxmox VE puede usar almacenamiento local como (DAS), SAN, NAS, así como almacenamiento compartido y distribuido (Ceph).
 
 ## <b>Hardware recomendado</b>
@@ -191,7 +213,7 @@ En nuestro caso, seleccionaremos la primera opción y le daremos clic izquierdo 
 
 ## <b>2.6. Almacenamiento en unidad de disco duro física</b>
 
-En esta ventana nos saldrán las opciones para seleccionar si queremos que nuestro disco duro este <b>reservado dinámicamente </b> es decir que solo se usara espacio en el disco físico a medida que se llena (hasta un máximo tamaño fijo), sin embargo, no se reducirá de nuevo automáticamente cuando el espacio en él se libere, también tendremos la opción de <b>Tamaño fijo</b> que puede tomar más tiempo para su creación en algunos sistemas, pero normalmente es más rápido al usarlo.
+En esta ventana nos saldrán las opciones para seleccionar si queremos que nuestro disco duro este <b>reservado dinámicamente</b> es decir que solo se usara espacio en el disco físico a medida que se llena (hasta un máximo tamaño fijo), sin embargo, no se reducirá de nuevo automáticamente cuando el espacio en él se libere, también tendremos la opción de <b>Tamaño fijo</b> que puede tomar más tiempo para su creación en algunos sistemas, pero normalmente es más rápido al usarlo.
 
 En nuestro caso utilizaremos la primera opción puesto que queremos una cantidad específica para nuestro Sistema Operativo y luego procederemos a dar un clic izquierdo en <b>Next</b>.
 
@@ -312,6 +334,7 @@ Luego de darle clic en ok, nos aparecerá una ventana en la que podremos leer la
 ![img_35](img/img_35.png)
 
 ## <b>4.3. Proxmox Virtual Environment (PVE)</b>
+
 Una vez que le dimos clic en i agree, nos aparecerá una ventana en la que podremos seleccionar el disco duro virtual en el que vamos a instalar nuestro sistema operativo, aparte de este, nos aparecerá un botón de <b>Opcións</b> en el cual al darle clic izquierdo nos saldrán las opciones para crear de forma manual las particiones que va a tener nuestro disco duro virtual.
 
 ![img_36](img/img_36.png)
@@ -432,7 +455,7 @@ Finalmente, una vez que se ha iniciado nuestro sistema operativo, nos saldrá un
 
 A continuación, hare los pasos para acceder desde la <b>consola</b> y también para acceder por medio del <b>navegador</b>.
 
-## <b>5.1.1. Acceso desde consola </b>
+## <b>5.1.1. Acceso desde consola</b>
 
 Para acceder desde consola nos saldrá nuestro nombre de usuario seguido de la palabra <b>login</b>, y acto seguido tendremos que escribir la palabra <b>root</b>, para luego proceder a presionar la tecla <b>Enter</b>.
 
@@ -442,7 +465,7 @@ Y luego en contraseña vamos a escribir la contraseña que creamos anteriormente
 
 ![img_56](img/img_56.png)
 
-## <b>5.1.2. Acceso desde el navegador </b>
+## <b>5.1.2. Acceso desde el navegador</b>
 
 Para acceder desde el navegador, lo primero que tendremos que hacer es escribir nuestro link en nuestro navegador para así poder buscar la página web de nuestro servidor.
 
